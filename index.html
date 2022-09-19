@@ -10,12 +10,37 @@
 <body>
     
     <style>
-        p .intro {
+        input[type="text"]:focus {
 
-            color: yellow;
+            background-color: pink;
         }
+
+        input[type="submit"]:hover {
+
+            background-color: blueviolet;
+        }
+
+       ::selection {
+
+            color: pink;
+        }
+
+        a[href$=".pdf"] {
+
+            background: url(thumb-6023.jpg) no-repeat;
+            padding-left: 40px
+        };
     </style>
 </body>
 
-<p class="intro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ad, ipsam mollitia dignissimos saepe impedit quod quasi odio reprehenderit aperiam vel aut sequi exercitationem necessitatibus perspiciatis cupiditate in veniam molestiae?</p>
+
+<p class="intro"> <br> ipsum dolor sit amet consectetur adipisicing elit. Totam ad, ipsam mollitia dignissimos saepe impedit quod quasi odio reprehenderit aperiam vel aut <a href="Character Entity HTML.pdf">sequi</a> exercitationem necessitatibus perspiciatis cupiditate in veniam molestiae? <br> </p>
+
+
+<form action="#" method="post" autocomplete="on">
+
+    <label for="inome"></label>
+    <input class="texto" type="text" name="nome" id="inome">
+    <input type="submit" value="Enviar">
+</form>
 </html>
